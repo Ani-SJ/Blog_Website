@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #937499;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #d5d8db;
+}
+
+.signup-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #6a1bbd;
+    color: #fff;
+    margin-bottom: 10px;
+    
+}
+
+.btn-primary:hover {
+    background-color: #501193;
+}
+
+.btn-secondary {
+    background-color: #9ca3af;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #6b7280;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">Daily Blogs</h2>
+            <p class="description">Escape into the realm of storytelling.</p>
+        </div>
+        <div class="signup-form">
+            <h2 class="form-title">Sign up here!</h2>
+            <form class="space-y-6" action="/signup" method="post">
+                <!-- first name -->
+                <div>
+                    <label for="fname" class="form-label">First Name</label>
+                    <input id="fname" name="fname" type="text" required class="form-input" />
+                </div>
+                <div>
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input id="lname" name="lname" type="text" required class="form-input" />
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email address</label>
+                    <input id="email" name="email" type="email" required class="form-input" />
+                </div>
+                <div>
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" name="password" type="password" required class="form-input" />
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+            <button type="button" id="login" class="btn btn-secondary">Login here</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('login').addEventListener('click', () => {
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>

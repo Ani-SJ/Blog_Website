@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #6a1bbd;
+            font-size: xx-large;
+           
+        }
+
+        p {
+            color: #333;
+            font-weight: bolder;
+          
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a1bbd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #501193;
+        }
+
+        #signup {
+            background: none;
+            border: none;
+            color: #6a1bbd;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            margin-top: 8px;
+        }
+
+        #signup:hover {
+            color: #501193;
+        }
+        .logo{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <h2>Blog Website</h2>
+        <p>Discover,Learn & Share</p>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/" method="post">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <button id="signup" onclick="window.location.href='/signup'">Sign Up here!</button>
+    </div>
+</body>
+
+</html>
